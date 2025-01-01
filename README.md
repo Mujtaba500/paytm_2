@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is an official starter Turborepo.(Example)
+This is an official starter Turborepo.(Example 2)
 
 ## Using this example
 
