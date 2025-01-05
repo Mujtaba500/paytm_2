@@ -6,6 +6,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "dev:user": "cd ./apps/user-app && npm run dev",
+    "dev:bank": "cd ./apps/bank-webhook && npm run dev",
     "db:studio": "cd ./packages/db && npx prisma studio",
     "db:migrate": "cd ./packages/db && npx prisma migrate dev",
     "db:pull": "cd ./packages/db && npx prisma db pull"
