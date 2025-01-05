@@ -5,7 +5,10 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:studio": "cd ./packages/db && npx prisma studio",
+    "db:migrate": "cd ./packages/db && npx prisma migrate dev",
+    "db:pull": "cd ./packages/db && npx prisma db pull"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
