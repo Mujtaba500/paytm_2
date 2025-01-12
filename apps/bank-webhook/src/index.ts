@@ -3,11 +3,13 @@ import db from "@repo/db/client";
 
 const app = express();
 
-app.post("/", async (req, res) => {
+app.use(express.json());
+
+app.post("/hdfcWebhook", async (req, res) => {
   const paymentInformation = {
     token: req.body.token,
     userId: req.body.user_identifier,
-    amount: req.body.amoun,
+    amount: req.body.amount,
   };
 
   try {
@@ -58,6 +60,9 @@ app.post("/", async (req, res) => {
     });
   }
 });
+
+app.listen(3003);
+console.log("server started on port 3003");
 
 // balances
 // onRampTransactions
